@@ -1,0 +1,444 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family:'Fira Sans', sans-serif;
+    line-height: 1.8;
+
+}
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+h2 {
+    font-size: 3.5rem;
+    
+}
+h3 {
+    font-size: 2.5rem;
+    
+    margin-bottom: 1.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.6rem;
+}
+button {
+    display: inline-block;
+    background: rgb(108,193,226);
+    background: linear-gradient(66deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 97%);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 10px;
+    
+   
+    
+}
+button a {
+    color: white;
+    text-decoration: none;
+}
+#info {
+    margin-top: 1rem;
+
+    
+}
+a:hover {
+    color: #e42424;
+    
+}
+i {
+    
+    margin-top: 3rem;
+    color: #e42424;
+    font-size: 3rem;
+}
+
+
+
+
+
+/* HEADER */
+header {
+    background-color: white;
+    box-shadow: 2px 2px 4px #d3d3d3;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 2s ease-out;
+    font-size: 1.5rem;
+
+    
+}
+
+nav a {
+    color: rgb(65, 60, 60);
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    
+    
+    text-align:center;
+
+
+}
+#Menu {
+    display: none;
+}
+#Menu:checked ~.menu {
+    height: 12rem;
+
+}
+#MenuMobile {
+    flex-basis: 50%;
+    justify-items: end;
+    color: #e42424;
+
+}
+header i {
+    
+    float: right;
+    
+}
+
+header img {
+    flex-basis: 50%;
+}
+
+/* MAIN */
+
+main h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+section {
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.uno {
+    
+    
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position-x: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-sizing: border-box;
+    padding: 15px;
+    
+}
+.uno p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+.uno h1 {
+    margin-top: 1.5rem;
+}
+.due {
+    background-color: #0c0633;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5rem;
+}
+.due button {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+figure {
+    text-align: center;
+    margin-top: 3rem;
+}
+.tre {
+    text-align: center;
+    margin:2rem;
+}
+#f1,#f2 {
+    margin: 2rem;
+    box-sizing: border-box;
+    
+    
+}
+#f1 img,#f2 img {
+    display: inline-block;
+    
+    width: 300px;
+    height: 250px;
+   
+   margin: 0 auto;
+}
+table {
+    margin: 1rem;
+}
+table caption {
+    font-size: 2.5rem;
+}
+th {
+    font-weight: bold;
+}
+thead,tfoot {
+    background-color: #d2dce7;
+}
+
+#info {
+    animation-name: premimi;
+    animation-duration: 1s;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    margin: 0.5em;
+}
+
+@keyframes premimi {
+    from{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.781);
+    }
+  
+    to{
+        box-shadow:0 0 0 10px rgba(0, 0, 0, 0) ;
+    }
+}
+
+
+/* FOOTER */
+
+
+footer {
+    margin-top: 2rem;
+    background-color:rgb(238, 238, 238) ;
+    padding: 3rem;
+}
+h5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    
+}
+footer p {
+    font-size: 1rem;
+}
+footer i {
+    margin-top: 0;
+}
+address {
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+#tasto {
+    display: inline-block;
+    background: rgb(108,193,226);
+    background: linear-gradient(66deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 97%);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    
+}
+#email {
+    height: 3rem;
+    font-size: 2rem;
+    box-sizing: border-box;
+    margin: 1px;
+    
+
+}
+form label {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.tabella2 {
+    display: none;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    box-sizing: border-box;
+}
+fieldset div input,fieldset div textarea{
+   
+   display: flex;
+   margin: 1rem auto;
+   font-size: 1.5rem;
+   padding: 0.8rem;
+   box-sizing: border-box;
+   
+
+    
+}
+legend {
+    padding-top: 5rem;
+    font-size: 2rem;
+    
+}
+#sede {
+    margin:5rem;
+    text-align: center;
+    
+}
+#sede p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+#sede h4 {
+    font-size: 2rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px){
+    .uno {
+        padding: 10rem;
+    }
+    .menu {
+        height: auto;
+        overflow: auto;
+        display: flex;
+        flex-basis: 70%;
+        justify-content: space-between;
+        
+
+    }
+    #MenuMobile {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        
+    }
+    nav ul li {
+        margin-left: 1.5rem;
+    }
+    h1 {
+        line-height: 1.1;
+    }
+    .flex {
+        display: flex;
+    }
+    .flex h3 {
+        line-height: 2.4rem;
+    }
+    header{
+        width: 95%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    .grid {
+        display: grid;
+        grid-template-areas: "figure aside"
+                                "figure aside" ;
+    }
+    aside section i {
+        position: relative;
+        right: 130px;
+        top:50px;
+       
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        justify-content: space-between;
+    }
+    footer div {
+        flex-basis: 20%;
+    }
+    footer form {
+        flex-basis: 30%;
+    }
+    h5 {
+        line-height: 1.5rem;
+    }
+    .immagini {
+        display: flex;
+    }
+    .tabella {
+        display: none;
+    }
+    .tabella2 {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    thead {
+        color: white;
+        background-color: #8486ee;
+        
+    }
+    tfoot{
+        background-color:#d2dce7 ;
+    }
+    tbody  {
+        background-color: #d2dce7;
+    }
+    #bianco {
+        background-color: white;
+    }
+    td,th {
+       padding: 1rem;
+       font-weight: 400;
+    }
+    .contatti {
+        display: flex;
+    }
+} 
+
+
+@media only screen and (min-width: 1024px){
+    .uno {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+    #info {
+        font-size: 2rem;
+        margin: 0.3rem;
+    }
+    address {
+        flex-basis:100%;
+        text-align: center;
+    }
+    #f1 img,#f2 img {
+        
+        
+        width: 500px;
+        height: 400px;
+       
+       
+    }
+    .immagini {
+        margin-bottom: 10rem;
+    }
+    .contatti {
+        padding: 5rem;
+    }
+}
+
+
+
+
+
+
